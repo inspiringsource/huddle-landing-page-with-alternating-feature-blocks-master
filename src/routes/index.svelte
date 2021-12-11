@@ -99,7 +99,7 @@
     border-radius: 28px;
     padding: 20px; 
     width: 250px;
-    height: 13px; 
+    height: 10px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,6 +112,26 @@
 
     margin-left: auto;
     margin-right: auto;
+    }
+    .footer-btn{
+        background-color: hsl(322, 100%, 66%);
+        border-radius: 28px;
+        padding: 20px; 
+        width: 350px;
+        height: 25px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        color: rgba(8, 36, 39, 1);
+        box-shadow: 0 0 5px rgba(128, 128, 128, 0.541);
+        border-color: white;
+        color: white;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -20px;
     }
     .Box-1{
 
@@ -129,14 +149,30 @@
         text-align: center;
         justify-content: space-around;
     }
+    .main-img {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    }
+
+
+
     .Box-14{
         grid-column: 1/3;
         grid-row: 7/10;
         z-index: 10;
-        width: 300px;
-        height: 100px;
+        width: 470px;
+        height: 140px;
         justify-self: center;
-        
+    }
+    .Box-14 h3{
+        text-align: center;
+        font-size: 20px;
+        color: black;
+        margin-top: 15px;
+        margin-bottom: 50px;
 
     }
     /* footer background */
@@ -165,9 +201,27 @@
     .Box-15 > div {
         
         background-color: red;
-        height: 100%;
+        height: 300px;
         /*width: 100%; */
 
+    }
+    .footerLogo{
+        -webkit-filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1); 
+    }
+    .midFooter{
+        display: flex;
+        justify-content: center; /* align horizontal */
+        align-items: center; /* align vertical */
+
+    }
+    .footerinfolist{
+        list-style-type: disc;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        columns: 2;
+        list-style-position: inside;
+        list-style-type: none;
     }
 
 </style>
@@ -197,17 +251,30 @@
     </div>  
     <div class="Box-1">
         <div>
-            <div class="Box-3">Box 3</div>
-            <div class="Box-4">Box 4</div> 
+            <div class="Box-3">
+                <h2>Grow Togather</h2>
+                <p>Grow Together Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
+            </div>
+            <div class="Box-4"><img class="togather-img main-img" src="./illustration-grow-together.svg" alt="Grow Togathe"></div> 
         </div>
         <div>
-            <div class="Box-5">Box 5</div>
-            <div class="Box-6">Box 6</div>
+            <div class="Box-5">
+                <img class="flowing-img main-img" src="./illustration-flowing-conversation.svg" alt="Flowing-conversation">
+            </div>
+            <div class="Box-6">
+                <h2>Flowing Conversations</h2>
+                <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow. </p>
+            </div>
         </div>
         <div>
             
-            <div class="Box-7">Box 7</div>
-            <div class="Box-8">Box 8</div>
+            <div class="Box-7">
+                <h2>Your Users </h2>
+                <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+            </div>
+            <div class="Box-8">
+                <img class="users-img main-img" src="./illustration-your-users.svg" alt="Your-Users">
+            </div>
         </div>
         <div>
             <div class="Box-9">Box 9</div>
@@ -217,12 +284,40 @@
          
     
 
-    <div class="Box-13">Box 13</div>
+    <div alt="Footer BG" class="Box-13">Box 13</div>
 
-    <div class="Box-14">Box 14</div>
+    <div class="Box-14">
+        <h3>Ready To Build Your Community?</h3>
+        <a class="footer-btn" href="www.frontendmentor.io">Get Started For Free</a>
+    </div>
     <div class="Box-15">
-        <div>footer1</div>
-        <div>footer2</div>
+        <div> <img class="footerLogo" src="logo.svg" alt="footer logo">
+        
+
+            <address>
+                <img class="icons" src="static/icon-location.svg" alt="location">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</address>
+            <div>
+                <img class="icons" src="static/icon-phone.svg" 
+            alt="phone">
+            +1-543-123-4567</div>
+            <div>
+                <img class="icons" src="static/icon-email.svg" alt="email">
+                example@huddle.com</div>
+        </div>
+        <div class="midFooter">
+
+            <ul class="footerinfolist">
+                <li><a href=/#>About Us</a></li>
+                <li><a href=/#>What We Do</a></li>
+                <li><a href=/#>FAQ</a></li>
+
+                <li> <a href=/#>Career</a></li>
+                <li><a href=/#>Blog</a></li>
+                <li><a href=/#>Contact Us</a></li>
+            </ul>
+
+        </div>
         <div>footer3</div>
 
     </div>
